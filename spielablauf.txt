@@ -1,0 +1,36 @@
+@startuml
+:Spielstart;
+:Identifikation der Rollen;
+-> "Nachtphase";
+:Armor benennt Liebespaar;
+:Diskussion und Verdacht;
+note right
+  Spieler diskutieren und 
+  versuchen, Verdächtige zu finden
+end note
+if (Abstimmung über Verdächtige?) then
+  ->[Ja] "Abstimmung und Eliminierung";
+  :Spieler eliminieren;
+else
+  ->[Nein] :Gehe zur nächsten Nacht;
+endif
+:Werwölfe wählen ein Opfer;
+:Seherin erfragt Identität eines Spielers;
+:Hexe entscheidet über Heiltrank/Gifttrank;
+if (Opfer wurde geheilt?) then
+  ->[Ja] :Spieler überlebt;
+else
+  ->[Nein] :Spieler stirbt;
+endif
+-> "Neue Runde startet";
+if (Werwölfe besiegt?) then
+  ->[Ja] :Dorfbewohner gewinnen!;
+else
+  if (Dorfbewohner in der Minderheit?) then
+    ->[Ja] :Werwölfe gewinnen!;
+  else
+    -> "Nächster Tag";
+  endif
+endif
+@enduml
+
