@@ -1,0 +1,17 @@
+@startuml
+
+usecase "Dorfbewohner Rolle annehmen"
+usecase "Verbündete finden"
+usecase "Diskutieren und Werwölfe enttarnen"
+usecase "Abstimmen über Verdächtige"
+usecase "In der Nacht schlafen"
+usecase "Verteidigen bei falschem Verdacht"
+
+Dorfbewohner -> "Dorfbewohner Rolle annehmen"
+Dorfbewohner -> "Diskutieren und Werwölfe enttarnen"
+Dorfbewohner -> "Abstimmen über Verdächtige"
+Dorfbewohner -> "Verteidigen bei falschem Verdacht"
+Dorfbewohner -> "Verbündete finden"
+Dorfbewohner -> "In der Nacht schlafen"
+
+@enduml
