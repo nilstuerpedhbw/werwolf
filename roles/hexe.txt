@@ -5,7 +5,7 @@ usecase "Verbündete finden"
 usecase "Diskutieren und Werwölfe enttarnen"
 usecase "Abstimmen über Verdächtige"
 usecase "Verteidigen bei falschem Verdacht"
-usecase "Sogut wie möglich eigene Rolle verstecken"
+usecase "So gut wie möglich eigene Rolle verstecken"
 
 Hexe -> "Hexen-Rolle annehmen"
 Hexe -> "Verbündete finden"
