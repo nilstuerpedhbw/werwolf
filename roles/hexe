@@ -1,0 +1,20 @@
+@startuml
+
+usecase "Hexen-Rolle annehmen"
+usecase "Verbündete finden"
+usecase "Diskutieren und Werwölfe enttarnen"
+usecase "Abstimmen über Verdächtige"
+usecase "Verteidigen bei falschem Verdacht"
+usecase "Sogut wie möglich eigene Rolle verstecken"
+
+Hexe -> "Hexen-Rolle annehmen"
+Hexe -> "Verbündete finden"
+Hexe -> "Diskutieren und Werwölfe enttarnen"
+Hexe -> "Abstimmen über Verdächtige"
+Hexe -> "Verteidigen bei falschem Verdacht"
+Hexe -> "Sogut wie möglich eigene Rolle verstecken"
+
+Hexe -> Spieler : Spieler retten
+Hexe -> Spieler : Spieler vergiften
+
+@enduml
