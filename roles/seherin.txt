@@ -7,7 +7,7 @@ usecase "Diskutieren und Werwölfe enttarnen"
 usecase "Abstimmen über Verdächtige"
 usecase "Verteidigen bei falschem Verdacht"
 usecase "In der Nacht Rolle eines Spielers erfragen"
-usecase "Sogut wie möglich eigene Rolle verstecken"
+usecase "So gut wie möglich eigene Rolle verstecken"
 
 Seherin -> "Seherin Rolle annehmen"
 Seherin -> "Spieler identifizieren"
@@ -15,7 +15,7 @@ Seherin -> "Verbündete finden"
 Seherin -> "Diskutieren und Werwölfe enttarnen"
 Seherin -> "Abstimmen über Verdächtige"
 Seherin -> "Verteidigen bei falschem Verdacht"
-Seherin -> "Sogut wie möglich eigene Rolle verstecken"
+Seherin -> "So gut wie möglich eigene Rolle verstecken"
 Seherin -> "In der Nacht Rolle eines Spielers erfragen"
 
 Seherin -> Spieler : Rolle erfahren
