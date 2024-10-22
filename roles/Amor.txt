@@ -1,0 +1,23 @@
+@startuml
+
+actor Spieler
+
+usecase "In der ersten Nacht erwachen"
+usecase "Amor-Rolle annehmen"
+usecase "Verbündete finden"
+usecase "Diskutieren und Werwölfe enttarnen"
+usecase "Abstimmen über Verdächtige"
+usecase "Verteidigen bei falschem Verdacht"
+usecase "So gut wie möglich eigene Rolle verstecken"
+
+Amor -> "In der ersten Nacht erwachen"
+Amor -> "Amor-Rolle annehmen"
+Amor -> "Verbündete finden"
+Amor -> "Diskutieren und Werwölfe enttarnen"
+Amor -> "Abstimmen über Verdächtige"
+Amor -> "Verteidigen bei falschem Verdacht"
+Amor -> "So gut wie möglich eigene Rolle verstecken"
+
+Amor -> Spieler : Zwei Spieler verlieben
+
+@enduml
