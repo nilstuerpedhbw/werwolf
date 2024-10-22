@@ -7,6 +7,8 @@ usecase "Vorgeben eine friedliche Rolle zu sein"
 usecase "Verteidigen bei Verdacht"
 usecase "Bei Dorfabstimmung Unschuldige präferieren"
 usecase "Werwölfe beschützen ohne dabei aufzufallen"
+usecase "In der Nacht aufwachen"
+
 
 Werwolf -> "Werwolf Rolle annehmen"
 Werwolf -> "Andere Werwölfe identifizieren"
@@ -15,5 +17,7 @@ Werwolf -> "Vorgeben eine friedliche Rolle zu sein"
 Werwolf -> "Verteidigen bei Verdacht"
 Werwolf -> "Bei Dorfabstimmung Unschuldige präferieren"
 Werwolf -> "Werwölfe beschützen ohne dabei aufzufallen"
+Werwolf -> "In der Nacht aufwachen"
+
 @enduml
 
