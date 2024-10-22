@@ -1,0 +1,19 @@
+@startuml
+
+usecase "Heiler-Rolle annehmen"
+usecase "Verbündete finden"
+usecase "Diskutieren und Werwölfe enttarnen"
+usecase "Abstimmen über Verdächtige"
+usecase "Verteidigen bei falschem Verdacht"
+usecase "So gut wie möglich eigene Rolle verstecken"
+
+Heiler -> "Heiler-Rolle annehmen"
+Heiler -> "Verbündete finden"
+Heiler -> "Diskutieren und Werwölfe enttarnen"
+Heiler -> "Abstimmen über Verdächtige"
+Heiler -> "Verteidigen bei falschem Verdacht"
+Heiler -> "So gut wie möglich eigene Rolle verstecken"
+
+Heiler -> Spieler : Spieler heilen
+
+@enduml
