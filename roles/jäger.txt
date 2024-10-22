@@ -1,0 +1,19 @@
+@startuml
+
+usecase "Jäger-Rolle annehmen"
+usecase "Verbündete finden"
+usecase "Diskutieren und Werwölfe enttarnen"
+usecase "Abstimmen über Verdächtige"
+usecase "Verteidigen bei falschem Verdacht"
+usecase "So gut wie möglich eigene Rolle verstecken"
+
+Jäger -> "Jäger-Rolle annehmen"
+Jäger -> "Verbündete finden"
+Jäger -> "Diskutieren und Werwölfe enttarnen"
+Jäger -> "Abstimmen über Verdächtige"
+Jäger -> "Verteidigen bei falschem Verdacht"
+Jäger -> "So gut wie möglich eigene Rolle verstecken"
+
+Jäger -> Spieler : Spieler mit in den Tod nehmen
+
+@enduml
