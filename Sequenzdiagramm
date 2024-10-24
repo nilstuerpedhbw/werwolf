@@ -1,0 +1,46 @@
+@startuml
+actor Erzähler
+actor Amor
+actor Heiler
+actor Werwölfe
+actor Hexe
+actor Seherin
+participant Opfer
+participant Spieler
+
+Erzähler -> Amor: Weckt Amor
+Amor -> Spieler: Wählt Liebespaar aus
+
+loop
+    Erzähler -> Heiler: Weckt Heiler
+    Heiler -> Erzähler: Wählt Person zum Schützen aus
+    
+    Erzähler -> Werwölfe: Weckt Werwölfe
+    Werwölfe -> Erzähler: Auf Opfer zeigen
+    
+    Erzähler -> Hexe: Weckt Hexe
+    Erzähler -> Hexe: Opfer zeigen
+    alt Heiltrank verwendet
+        Hexe -> Opfer: Opfer gerettet
+    else Heiltrank nicht verwendet
+        Hexe -> Opfer: Opfer stirbt
+    end
+    alt Gifttrank verwendet
+        Hexe -> Spieler: Spieler getötet
+    else Kein Gifttrank verwendet
+    end
+    
+    Erzähler -> Seherin: Weckt Seherin
+    Seherin -> Erzähler: Rolle erfragen
+    Erzähler -> Seherin: Rolle aufdecken
+    
+    Erzähler -> Spieler: Spieler aufwecken
+    Erzähler -> Spieler: Das Ergebnis der Nacht mitteilen
+    
+    Spieler -> Opfer: Abstimmen
+    Erzähler -> Opfer: Ausgewähltes Opfer wird eliminiert
+    Opfer -> Spieler: Rolle aufdecken
+    
+    Erzähler -> Spieler: Einschlafen lassen
+end
+@enduml
