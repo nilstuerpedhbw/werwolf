@@ -12,7 +12,7 @@ participant Spieler
 Erzähler -> Amor: Weckt Amor
 Amor -> Spieler: Wählt Liebespaar aus
 
-loop
+loop Spiel ist noch nicht entschieden
     Erzähler -> Heiler: Weckt Heiler
     Heiler -> Erzähler: Wählt Person zum Schützen aus
     
