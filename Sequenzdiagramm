@@ -5,6 +5,7 @@ actor Heiler
 actor Werwölfe
 actor Hexe
 actor Seherin
+actor Jäger
 participant Opfer
 participant Spieler
 
@@ -36,10 +37,26 @@ loop
     
     Erzähler -> Spieler: Spieler aufwecken
     Erzähler -> Spieler: Das Ergebnis der Nacht mitteilen
+
+ alt Spieler sind gestorben
+        Erzähler -> Spieler: Rolle der Spieler wird aufgedeckt
+ alt Opfer war Jäger
+        Jäger -> Spieler: Reißt Spieler mit in den Tod
+    else Opfer war kein Jäger
+    end
+    else Kein Spieler ist gestorben
+    end
+
+    
     
     Spieler -> Opfer: Abstimmen
     Erzähler -> Opfer: Ausgewähltes Opfer wird eliminiert
     Opfer -> Spieler: Rolle aufdecken
+
+ alt Opfer war Jäger
+        Jäger -> Spieler: Reißt Spieler mit in den Tod
+    else Opfer war kein Jäger
+    end
     
     Erzähler -> Spieler: Einschlafen lassen
 end
